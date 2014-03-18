@@ -41,6 +41,7 @@ subprojects { subProject ->
         testCompile libraries.festAssertions
         testCompile libraries.mockito
         testCompile libraries.testNg
+        testCompile libraries.truth
     }
 
     sourceSets {

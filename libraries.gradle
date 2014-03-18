@@ -6,6 +6,7 @@ ext {
     testNgVersion = '6.8.5'
     truthVersion = '0.13'
     guavaVersion = '16.0.1'
+    autovalueVersion = '1.0-rc1'
 
 
     libraries = [
@@ -13,11 +14,14 @@ ext {
             // logging
             logback:                dependencies.create("ch.qos.logback:logback-classic:${logbackVersion}"),
 
+            // useful libs
+            guava:                  dependencies.create("com.google.guava:guava:${guavaVersion}"),
+            autovalue:              dependencies.create("com.google.auto.value:auto-value:${autovalueVersion}"),
+
             // test
             testNg:                 dependencies.create("org.testng:testng:${testNgVersion}"),
             festAssertions:         dependencies.create("org.easytesting:fest-assert:${festAssertionsVersion}"),
             mockito:                dependencies.create("org.mockito:mockito-all:${mockitoVersion}"),
             truth:                  dependencies.create("org.truth0:truth:${truthVersion}"),
-            guava:                  dependencies.create("com.google.guava:guava:16.0.1"),
     ]
 }
