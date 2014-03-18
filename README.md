@@ -1,4 +1,4 @@
-gradle-template
+gradle-java-template
 ===============
 
 basic template for gradle-based java project
